@@ -7,7 +7,7 @@ sudo mkfs.ext4 /dev/nvme0n1p4
 
 echo " manage sudoers thingy"
 
-sudo pacstrap /mnt base linux linux-firmware linux-headers dkms ntfs-3g git base-devel grub efibootmgr dosfstools os-prober mtools bc 
+sudo pacstrap /mnt base linux linux-firmware linux-headers dkms ntfs-3g git base-devel grub efibootmgr dosfstools os-prober mtools bc nvim
 sudo genfstab -U /mnt >> /mnt/etc/fstab
 sudo arch-chroot /mnt 
 sudo ln -sf /usr/share/zoneinfo/Asia/Calcutta /etc/localtime
