@@ -66,7 +66,7 @@ touch /etc/asound.conf
 echo "<confdir:pcm/dca.conf>" >> /etc/asound.conf
 
 #Utility programs
-yay -S discord firefox tuf-manager flameshot zoom libreoffice-still gparted thunar ranger polkit polkit-gnome openssh blender vlc code copyq zram-generator ananicy-git nohang-git telegram-desktop deadbeeef-git nheko-git lightcord-bin
+yay -S discord firefox tuf-manager flameshot zoom libreoffice-still gparted thunar ranger polkit polkit-gnome openssh blender vlc code copyq zram-generator ananicy-git nohang-git telegram-desktop deadbeeef-git nheko-git lightcord-bin nictotine-plus-git qbittorrent
 
 systemctl enable --now nohang-desktop.service
 systemctl enable ananicy
@@ -88,5 +88,7 @@ virsh net-start default
 
 
 #grub-mkconfig -o /boot/grub/grub.cfg #Added to detect new kernels 
+
+sudo pacman -Rns $(pacman -Qtdq)
 
 
