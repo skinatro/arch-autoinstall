@@ -79,7 +79,7 @@ yay -S steam-fonts ttf-liberation wqy-zenhei
 yay -S wine-staging wine-gecko wine-mono lutris lib32-libpulse lib32-openal lib32-mpg123 samba lib32-gnutls lib32-giflib lib32-libpng lib32-gst-plugins-base lib32-gst-plugins-good lib32-gst-plugins-bad lib32-gst-plugins-ugly winetricks-git dxvk-bin wine-nine lib32-libxrandr lib32-libxinerama steam gamemode lib32-gamemode
 
 #VFIO virtual machine  
-yay -S qemu libvirt edk2-ovmf virt-manager iptables-nft dnsmasq linux-zen-headers 
+yay -S qemu libvirt edk2-ovmf virt-manager iptables-nft dnsmasq #linux-zen-headers 
 
 systemctl enable libvirtd.service
 systemctl enable virtlogd.socket 
@@ -87,6 +87,6 @@ virsh net-autostart default
 virsh net-start default
 
 
-grub-mkconfig -o /boot/grub/grub.cfg #Added to detect new kernels 
+#grub-mkconfig -o /boot/grub/grub.cfg #Added to detect new kernels 
 
 
