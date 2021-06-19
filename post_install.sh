@@ -41,7 +41,7 @@ pacman -Syyu
 yay -S rtl8821ce-dkms-git
 
 #Adding Graphical Stuff (Display server, window manager,X11 drivers)
-yay -S  xorg xorg-xinit xorg-apps xorg-xauth xorg-xhost xf8-video-amdgpu bspwm sxhkd polybar deadd-notification-center-bin lightdm lightdm-gtk-greeter kitty rofi xdg-user-dirs picom
+yay -S  xorg xorg-xinit xorg-apps xorg-xauth xorg-xhost xf8-video-amdgpu bspwm sxhkd polybar deadd-notification-center-bin lightdm lightdm-gtk-greeter kitty rofi xdg-user-dirs picom gvfs
 #maybe add betterlockscreen
 #change the LightDM Greeter later
  install -Dm755 /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/bspwmrc
