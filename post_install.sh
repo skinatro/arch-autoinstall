@@ -41,7 +41,7 @@ pacman -Syyu
 yay -S rtl8821ce-dkms-git
 
 #Adding Graphical Stuff (Display server, window manager,X11 drivers)
-yay -S  xorg xorg-xinit xorg-apps xorg-xauth xorg-xhost xf8-video-amdgpu bspwm sxhkd polybar deadd-notification-center-bin lightdm lightdm-gtk-greeter kitty rofi xdg-user-dirs picom gvfs
+yay -S  xorg xorg-xinit xorg-apps xorg-xauth xorg-xhost xf8-video-amdgpu bspwm sxhkd polybar deadd-notification-center-bin lightdm lightdm-gtk-greeter kitty rofi xdg-user-dirs picom 
 #maybe add betterlockscreen
 #change the LightDM Greeter later
  install -Dm755 /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/bspwmrc
@@ -66,11 +66,12 @@ touch /etc/asound.conf
 echo "<confdir:pcm/dca.conf>" >> /etc/asound.conf
 
 #Utility programs
-yay -S discord firefox tuf-manager flameshot zoom libreoffice-still gparted thunar ranger polkit polkit-gnome openssh blender vlc code copyq zram-generator ananicy-git nohang-git telegram-desktop deadbeeef-git nheko-git lightcord-bin nictotine-plus-git qbittorrent
+yay -S discord firefox tuf-manager flameshot zoom libreoffice-still gparted thunar ranger polkit polkit-gnome openssh blender vlc code copyq zram-generator ananicy-git nohang-git telegram-desktop deadbeeef-git nheko-git lightcord-bin nictotine-plus-git qbittorrent gvfs ufw
 
 systemctl enable --now nohang-desktop.service
 systemctl enable ananicy
 systemctl start ananicy
+sudo systemctl enable ufw.service
 
 #Customizationlike Fonts,new shell etc
 yay -S steam-fonts ttf-liberation wqy-zenhei 
