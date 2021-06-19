@@ -4,7 +4,9 @@ A script that auto installs arch onto my laptop , installs all the packages I us
 
 ```
 wget https://raw.githubusercontent.com/skinatro/arch-autoinstall/main/install_script.sh
+
 chmod +x install_script.sh
+
 ./install_script.sh
 ```
 
@@ -12,15 +14,15 @@ chmod +x install_script.sh
 
 To use this curl or wget the install_script.sh ,give it executable perms by chmod +x ,it should install the necessary packages and "hopefully" properly setup arch(I plan to try this inside vm {with few packages changed}),
 
-it should also download the post_install.sh and config_install.sh scripts as well
+it should also download the post_install.sh and config_install.sh scripts and makes them executable as well
 
 # post_install.sh
 
-Installs the programs I want and activates their services and other setup commands required
+This script enables multi-lib, adds aur helper - [yay](https://github.com/Jguer/yay), enables [chaotic aur](https://aur.chaotic.cx/) , updates the system , installs the packages I want then removes the orphaned packages
 
 # config_install.sh 
 
-Restores the config files for most of the programs and themes it according to the theme. It will be available at this [repo] (https://github.com/skinatro/dotfiles)  
+Restores the config files for most of the programs and themes it according to the theme. It will be available at this [repo](https://github.com/skinatro/dotfiles)  
 
 * I haven't created the repo yet , so the link will be broken 
 
