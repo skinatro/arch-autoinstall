@@ -23,3 +23,7 @@ Installs the programs I want and activates their services and other setup comman
 Restores the config files for most of the programs and themes it according to the theme. It will be available at this [repo] (https://github.com/skinatro/dotfiles)  
 
 * I haven't created the repo yet , so the link will be broken 
+
+## License
+
+This script is licensed under GPLv2.0
