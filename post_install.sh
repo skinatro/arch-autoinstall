@@ -66,12 +66,16 @@ touch /etc/asound.conf
 echo "<confdir:pcm/dca.conf>" >> /etc/asound.conf
 
 #Utility programs
-yay -S discord firefox tuf-manager flameshot zoom libreoffice-still gparted thunar ranger polkit polkit-gnome openssh blender vlc code copyq zram-generator ananicy-git nohang-git telegram-desktop deadbeeef-git nheko-git lightcord-bin nictotine-plus-git qbittorrent gvfs ufw
+yay -S discord firefox tuf-manager flameshot zoom libreoffice-still gparted thunar ranger polkit polkit-gnome openssh blender vlc code copyq zram-generator ananicy-git nohang-git telegram-desktop deadbeeef-git nheko-git lightcord-bin nictotine-plus-git qbittorrent gvfs ufw kdeconnect
 
 systemctl enable --now nohang-desktop.service
 systemctl enable ananicy
 systemctl start ananicy
 sudo systemctl enable ufw.service
+
+sudo ufw allow 1714:1764/udp
+sudo ufw allow 1714:1764/tcp
+sudo ufw reload
 
 #Customizationlike Fonts,new shell etc
 yay -S steam-fonts ttf-liberation wqy-zenhei 
