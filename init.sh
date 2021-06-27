@@ -23,7 +23,7 @@ pacstrap /mnt base sudo linux-zen linux-zen-headers linux-firmware dkms ntfs-3g 
 genfstab -U /mnt >> /mnt/etc/fstab
 
 touch chroot.sh
-curl https://raw.githubusercontent.com/skinatro/arch-autoinstall/main/init.sh > chroot.sh
+curl https://raw.githubusercontent.com/skinatro/arch-autoinstall/main/chroot.sh > chroot.sh
 chmod +x chroot.sh
 mv chroot.sh /mnt 
 
