@@ -11,6 +11,7 @@ touch /etc/hostname
 echo kuroneko >> /etc/hostname                          cat /etc/hostname                                       cat >> /etc/hosts << EOF                                
 127.0.0.1    localhost
 ::1    locathost                                        127.0.1.1    kuroneko.localdomain kuroneko              EOF
+
 cat /etc/hosts
 
                                                         mkinitcpio -p linux-zen                                 passwd root
